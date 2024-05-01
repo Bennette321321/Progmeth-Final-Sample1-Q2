@@ -20,12 +20,16 @@ public class NumberSquare extends HBox {
 
 	public void setupNumber(int number) {
 		// TODO 
-		
+		this.number = number;
+		isDrawn = false;
+		numberText.setText(String.valueOf(getNumber()));
+		setBackground(Background.fill(Color.WHITE));
 	}	
 	
 	public void highlight() {
 		// TODO 
-		
+		setBackground(Background.fill(Color.ORANGE));
+		isDrawn = true;
 	}
 	
 	public int getNumber() {
